@@ -1,0 +1,17 @@
+mybatis:
+    mapperLocations: classpath*:mapper/*.xml
+    configuration:
+      mapUnderscoreToCamelCase: true
+      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.7:3306/Spring-quartz-demo?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+    username: root
+    password: admin
+
+
+logging:
+  file: spring-quartz.log
+  path: /data/ceta/log/bhfarm_log/bsg/
